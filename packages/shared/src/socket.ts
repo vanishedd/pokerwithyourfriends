@@ -17,6 +17,7 @@ export interface ServerToClientEvents {
   'room:error': (info: { message: string }) => void;
   'hand:commitment': (commitment: RoomSnapshot['deckCommitment']) => void;
   'hand:reveal': (reveal: CardReveal) => void;
+  'hand:complete': (summary: HandSummary) => void;
 }
 
 export interface InterServerEvents {}
@@ -26,4 +27,3 @@ export interface SocketData {
   playerId?: string;
   playerToken?: string;
 }
-
