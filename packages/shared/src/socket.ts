@@ -1,4 +1,4 @@
-import type { CardReveal, ChatMessage, GameAction, RoomSnapshot } from './types';
+import type { CardReveal, ChatMessage, GameAction, HandSummary, RoomSnapshot } from './types';
 
 export interface ClientActionPayload {
   type: GameAction['type'];
@@ -26,3 +26,4 @@ export interface SocketData {
   playerId?: string;
   playerToken?: string;
 }
+
