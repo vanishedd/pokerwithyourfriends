@@ -1,0 +1,18 @@
+{
+  "name": "pokerwithyourfriends",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@8.15.5",
+  "scripts": {
+    "dev": "concurrently \"pnpm --filter @pwyf/server dev\" \"pnpm --filter @pwyf/client dev\"",
+    "build": "pnpm --filter @pwyf/server build && pnpm --filter @pwyf/client build",
+    "lint": "pnpm -r lint",
+    "test": "pnpm -r test"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "typescript": "^5.4.5",
+    "vitest": "^1.5.3"
+  }
+}
+

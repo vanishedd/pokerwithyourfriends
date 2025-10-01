@@ -1,0 +1,23 @@
+# dependencies
+node_modules/
+apps/*/node_modules/
+
+# build output
+dist/
+apps/*/dist/
+apps/client/node_modules/.vite/
+
+# logs and misc
+*.log
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db
+
+# env files
+.env
+.env.*
+
+# editor settings
+.vscode/
+.idea/
